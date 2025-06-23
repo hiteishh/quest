@@ -16,12 +16,11 @@ COPY . .
 # Make the bin scripts executable
 RUN chmod +x bin/*
 
-# Set environment variable for the SECRET_WORD (can be overridden at runtime)
-ENV SECRET_WORD=default_secret
+#removed secrets
 
 # Expose the app's listening port
 EXPOSE 3000
 
 # Start the application
-CMD ["node", "app.js"]
+CMD ["node", "src/000.js"]
 
